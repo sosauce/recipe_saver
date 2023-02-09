@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Recipe Saver",
+  "description": "An extension that saves recipes from the web",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "save_recipe": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Save the recipe on the current tab"
+    }
+  }
+}
